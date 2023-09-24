@@ -1,0 +1,80 @@
+<?php
+$ip = "IP: " . $_SERVER['REMOTE_ADDR'];
+$user = "System and browser: " . $_SERVER['HTTP_USER_AGENT'];
+$fillo = fopen('visiters.txt', 'a');
+fwrite($fillo, "Zayer:\n");
+fwrite($fillo, $ip . "\n");
+fwrite($fillo, $user . "\n");
+fclose($fillo);
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="ugem, الاتحاد, العام, الوطني, طلاب, طالب, للطلاب, الموريتانيين, للطلبة, نتائج, باك bac, استمارة, التوجيه, التوجيهات, استمارة التوجيه, معدل, حساب, iscae, iset, المعهد, العالي, المهني, كلية, الملحق, الطب, جامعة, الجامعة, الاستمارة, الأولى, الثانية, معلومات, université, institue">
+  <title>موقع الاتحاد العام للطلاب الموريتانيين UGEM التعريفي ببعض مؤسسات التعليم الجامعي</title>
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+<nav>
+        <img src="./img/ugem.png" alt="">
+        <h1>هذه الخدمة مقدمة من طرف الخلية الإعلامية بالاتحاد العام للطلاب الموريتانيين، UGEM</h1>
+        <p>أول نقابة طلابية يتم ترخيصها تحت الرقم 2006/058 والنقابة الوحيدة الموجودة في كافة مؤسسات التعليم العالي الوطنية.</p>
+
+</nav>
+  <br>
+  <div style="display: inline-block; margin-right: 10px;">
+    <center>
+      <button id="F" style="display: none;" name="F"></button>
+      <button id="S" style="display: none;" name="S"></button>
+      <button id="T" style="display: none;" name="T"></button>
+      <button id="Y" style="display: none;" name="Y"></button>
+      <button id="W" style="display: none;" name="W"></button>
+  
+      <label for="F"><img src="./img/facebook.jpg" style="width: 12px; margin-top: 70px;"></label>
+      <label for="S"><img src="./img/snapchat.png" style="width: 12px; margin-top: 70px;"></label>
+      <label for="T"><img src="./img/tiktok.jpg" style="width: 12px; margin-top: 70px;"></label>
+      <label for="Y"><img src="./img/youtube.jpg" style="width: 12px; margin-top: 70px;"></label>
+      <label for="W"><img src="./img/wtsp.jpg" style="width: 12px; margin-top: 70px;"></label>
+    </center>
+    <script>
+      document.getElementById("F").addEventListener("click", function(){
+          window.location.href="https://www.facebook.com/profile.php?id=100067002467938&mibextid=ZbWKwL";
+      })
+      document.getElementById("S").addEventListener("click", function(){
+        window.location.href="https://www.snapchat.com/add/ugem2006";
+      })
+      document.getElementById("T").addEventListener("click", function(){
+        window.location.href="https://www.tiktok.com/@ugem2006.com?_t=8ecFYDzXofd&_r=1";
+      })
+      document.getElementById("Y").addEventListener("click", function(){
+        window.location.href="https://www.youtube.com/@UGEM-ho6yj";
+      })
+      document.getElementById("W").addEventListener("click", function(){
+        window.location.href="https://wa.me/+22226092881";
+      })
+    </script>
+  </div>
+  
+  <main>
+    <iframe src="./pages/index1.html" frameborder="0"></iframe>
+  </main>
+  <center>
+    <h6 calss="h6"style="font-size:11px">
+      تم إنشاء الموقع و العمل على تطويره من طرف أعضاء الخلية التقنية التابعة للخلية الإعلامية المركزية بالاتحاد العام للطلاب الموريتانيين، 
+      <br>
+      رئيس الخلية التقنية : محمد طه محمد سالم أب، (ISCAE)
+      <br>
+      الأعضاء : أسامة محمد عالي العتيق و عالي سيداحمد وداد (SUPNUM)
+   </h6>
+  </center>
+
+    
+</body>
+</html>
