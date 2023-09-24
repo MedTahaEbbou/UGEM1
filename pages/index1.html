@@ -25,14 +25,13 @@
 
 
 <script>
-  const iframe = document.querySelector('iframe');
-  const button = document.getElementById('changeIframe');
-
-  button.addEventListener('click', function() {
-    iframe.src = './pages/iserie.html';
-
-    window.location.href = 'https://medtahaebbou.github.io/UGEM1/index2'; 
+  window.addEventListener('message', function(event) {
+    if (event.data === 'changeIframeSrc') {
+      const iframe = document.querySelector('iframe');
+      iframe.src = './pages/iserie.html';
+    }
   });
-</script>   
+</script>
+
 </body>
 </html>
